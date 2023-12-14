@@ -28,6 +28,18 @@ window.addEventListener('scroll', function(event) {
       layer.style.transform = translate3d;
     }
   });
+
+ 
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        hamburgerMenu.addEventListener("click", function () {
+            mobileMenu.style.display = (mobileMenu.style.display === "block") ? "none" : "block";
+        });
+    });
+
+
   
   let ejecucion= new Date();
   console.log(ejecucion);

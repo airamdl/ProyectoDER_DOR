@@ -3,7 +3,12 @@
     padding: 0;
     margin: 0;
 }
- 
+@media print{
+  body{
+    background-color: white;
+    color: #000000;
+  }
+}
   /* header */
   #navigation {
     width: 100%;
@@ -11,38 +16,52 @@
     position: fixed;
     background: linear-gradient(#4D3414, #221506);
     top: 0;
-    z-index: 1000; /* Agrega un valor de z-index adecuado */
+    z-index: 1000; 
   }
   
   .nes{
     padding-left: 11em;
     padding-top: 8px;
-    postition: fixed;
+    position: fixed;
     
     
   }
   .games {
     display: inline;
-    padding: 25px;
+    padding: 20px;
   }
   
   .productos {
     display: inline;
-    padding: 25px;
+    padding: 20px;
   }
   
   .personajes  {
     display: inline;
-    padding: 25px;
+    padding: 20px;
   }
   .index {
     display: inline;
-    padding: 25px;
+    padding: 20px;
   }
   .contacto{
     display: inline;
-    padding: 25px;
+    padding: 20px;
   }
+
+  .videos{
+    display: inline;
+    padding: 20px;
+  }
+  .galeria{
+    display: inline;
+    padding: 20px;
+  }
+  .lista{
+    display: inline;
+    padding: 20px;
+  }
+
   
   .navitems {
     color: white;
@@ -74,7 +93,46 @@
     color: #003300;
     text-decoration: none;
   }
+/* meadiquery nav */
+@media screen and (max-width: 1150px) {
+  .navitems {
+      display: none;
 
+  }
+
+  .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      padding: 20px;
+      z-index: 1010;
+      
+  }
+
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #FFF;
+      margin: 6px 0;
+  }
+
+  .mobile-menu {
+      display: none;
+      background: linear-gradient(#4D3414, #221506);
+      position: fixed;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+  }
+
+  .mobile-menu a {
+      display: block;
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+  }
+}
 
 
 #hero {
@@ -119,7 +177,15 @@
   .svg-inline--fa {
     vertical-align: -0.200em;
   }
-  
+  h1{
+    text-align: center;
+    margin: auto;
+  }
+  p{
+    text-align: center;
+    margin: auto;
+    
+  }
 
 footer{
     background: linear-gradient(#4D3414, #221506);
@@ -220,3 +286,4 @@ footer{
     background: #fefefe;
     border-color: #125688;
   }  
+

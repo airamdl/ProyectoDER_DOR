@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos</title>
     <link rel="stylesheet" href="./src/css/juegos.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <!-- Contenido de la página -->
+  
 
     <main>
         <ul class='slider'>
@@ -79,9 +80,20 @@
 
             document.addEventListener('click', activate, false);
         });
+
+        
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        hamburgerMenu.addEventListener("click", function () {
+            mobileMenu.style.display = (mobileMenu.style.display === "block") ? "none" : "block";
+        });
+    });
+
     </script>
 
-    <!-- footer -->
+
 
 </body>
 </html>
